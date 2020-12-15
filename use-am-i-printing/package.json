@@ -34,5 +34,6 @@
   },
   "bugs": {
     "url": "https://github.com/joeblas/use-am-i-printing/issues"
-  }
+  },
+  "homepage": "https://useamiprinting.netlify.app/"
 }
