@@ -3,9 +3,9 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-A starter template for creating a new React Hook.
+Creating using a starter template for creating a new React Hook by Colby Fayock.
 
-## 🚀 Getting Started
+## 🚀 Getting Started with Creating your own Custom Hook
 
 ### tl;dr
 * `git clone https://github.com/colbyfayock/use-custom-hook [directory]`

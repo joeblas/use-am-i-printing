@@ -1,11 +1,11 @@
 {
   "name": "use-am-i-printing",
   "version": "1.0.1",
-  "description": "A starter for creating a new React hook",
+  "description": "A simple React hook for detecting if the browser is printing.",
   "author": {
     "name": "Joe Gallegos",
-    "email": "hello@colbyfayock.com",
-    "url": "https://twitter.com/colbyfayock"
+    "email": "joebgallegos@gmail.com",
+    "url": "https://twitter.com/joebgallegos"
   },
   "keywords": [
     "react",
@@ -30,9 +30,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/colbyfayock/use-am-i-printing"
+    "url": "https://github.com/joeblas/use-am-i-printing"
   },
   "bugs": {
-    "url": "https://github.com/colbyfayock/use-am-i-printing/issues"
+    "url": "https://github.com/joeblas/use-am-i-printing/issues"
   }
 }

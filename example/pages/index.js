@@ -14,11 +14,7 @@ export default function Index() {
 
   const repositoryUrlDisplay = repositoryExists && repositoryUrl.split('://')[1];
 
-  const hookSettings = {
-    message: 'Hello, custom hook!'
-  }
-
-  const { message } = useAmIPrinting(hookSettings);
+  const isPrinting = useAmIPrinting();
 
   return (
     <main>
@@ -70,14 +66,14 @@ export default function Index() {
 
       <section>
 
-        <h1>{ toCamel(name) }</h1>
+        <h1>{toCamel(name)}</h1>
 
-        <p>{ description }</p>
+        <p>{description}</p>
 
-        { repositoryExists && (
+        {repositoryExists && (
           <p>
             <a href={repositoryUrl}>
-              { repositoryUrlDisplay }
+              {repositoryUrlDisplay}
             </a>
           </p>
         )}
@@ -85,7 +81,7 @@ export default function Index() {
         <h2>How to use</h2>
 
         <p>
-          Add your instructions here!
+          Put the hook in a React file. Detect whether or not the browser is printing the page.
         </p>
 
         <h2>Examples</h2>
@@ -96,24 +92,26 @@ export default function Index() {
         </p>
         <pre>
           <code>
-{`const hookSettings = {
-  message: 'Hello, custom hook!'
-}
-
-const { message } = useAmIPrinting(hookSettings);`}
+            {`const isPrinting = useAmIPrinting();`}
           </code>
         </pre>
         <p>
           <strong>Output:</strong>
         </p>
         <p>
-          { message }
+          {isPrinting ? 'Yes, I am printing.' : 'No, I am not printing.'}
+        </p>
+        <p>
+          <strong>Tip:</strong>
+        </p>
+        <p>
+          Try printing this page. Notice how the output above changes.
         </p>
       </section>
 
       <footer>
         <p>
-          Made by <a href={authorUrl}>{ authorName }</a>
+          Made by <a href={authorUrl}>{authorName}</a>
         </p>
       </footer>
     </main>
